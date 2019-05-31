@@ -1,0 +1,791 @@
+@charset "UTF-8";
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style-type: none;
+    display: inline-block; }
+
+body {
+  color: #18191b; }
+
+a {
+  color: #18191b; }
+  a:hover {
+    text-decoration: none; }
+
+p {
+  margin: 0; }
+
+i::before {
+  margin: 0 !important;
+  font-size: inherit !important; }
+
+section {
+  padding-top: 50px; }
+
+.zHeading {
+  position: relative; }
+  .zHeading h1 {
+    color: #44566c;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 42px;
+    position: relative; }
+    .zHeading h1::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      background-color: #0e65f3;
+      height: 4px;
+      bottom: -10px; }
+  .zHeading a {
+    color: #44566c;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 42px;
+    /* Text style for "Hamısını g" */
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.zCard {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+  .zCard .cardHead img {
+    width: 100%; }
+  .zCard .cardBody {
+    padding: 28px 30px 58px; }
+    .zCard .cardBody .heading {
+      padding-bottom: 10px; }
+      .zCard .cardBody .heading a {
+        color: #0e65f3;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 25px; }
+      .zCard .cardBody .heading span {
+        color: #878e9e;
+        font-size: 12px;
+        font-weight: 500;
+        position: relative; }
+        .zCard .cardBody .heading span::before {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background: #878e9e;
+          border-radius: 100%;
+          left: -17px;
+          top: 5px; }
+    .zCard .cardBody .content p {
+      color: #152942;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 30px; }
+  .zCard .cardFooter {
+    border-radius: 25px 0 0 25px;
+    background-color: #0e65f3;
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+    padding: 13px;
+    width: 55px;
+    height: 45px;
+    text-align: center; }
+    .zCard .cardFooter i {
+      color: white;
+      font-size: 26px; }
+
+main {
+  margin-bottom: 100px; }
+
+@keyframes ring {
+  0% {
+    padding: 6px;
+    top: -2px;
+    left: -2px; }
+  100% {
+    padding: 10px;
+    top: -6px;
+    left: -6px; } }
+body {
+  background: #bbe4ff;
+  max-height: 100vh;
+  overflow: hidden; }
+  body header h1 {
+    text-align: center;
+    color: #a8bd82; }
+  body footer {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 100;
+    padding-bottom: 20px; }
+    body footer .dropUp {
+      position: absolute;
+      right: 4px;
+      top: -115px;
+      display: none; }
+      body footer .dropUp .item {
+        border-radius: 100%;
+        border: 1px solid #007cce;
+        padding: 6px;
+        text-align: center;
+        display: block;
+        margin-bottom: 15px;
+        transition: all 0.15s;
+        cursor: pointer;
+        background: #bbe4ff; }
+      body footer .dropUp .fas {
+        color: #007cce;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        display: inline-block; }
+    body footer .profile {
+      cursor: pointer;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border: 1px solid #007cce;
+      border-radius: 100%;
+      box-shadow: 0px 0px 30px 6px #86add4; }
+      body footer .profile i {
+        font-size: 20px;
+        color: #007cce; }
+    body footer .settingPage {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #b3b3b3d4;
+      display: none; }
+      body footer .settingPage .mainForm {
+        background: #3131318c;
+        padding: 40px 50px;
+        border-radius: 10px;
+        position: relative; }
+        body footer .settingPage .mainForm .form {
+          padding: 3px; }
+          body footer .settingPage .mainForm .form input {
+            border-radius: 8px;
+            border: none;
+            background: #8bd7e48c;
+            color: #f3f3f3;
+            margin-bottom: 15x;
+            font-size: 16px;
+            height: 45px;
+            margin-bottom: 20px; }
+            body footer .settingPage .mainForm .form input::placeholder {
+              color: #dfdfdf;
+              font-size: 15px; }
+            body footer .settingPage .mainForm .form input:focus {
+              box-shadow: 0 0 10px 8px rgba(13, 13, 14, 0.25); }
+          body footer .settingPage .mainForm .form .btn {
+            color: white;
+            background: #0095f7; }
+        body footer .settingPage .mainForm .fa-times {
+          position: absolute;
+          top: -15px;
+          right: -15px;
+          font-size: 15px;
+          color: white;
+          text-align: center;
+          background-color: #007cce;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 100%;
+          cursor: pointer; }
+  body .mapCol {
+    padding-left: 0; }
+    body .mapCol .map {
+      height: 600px;
+      width: 784px;
+      margin: 0 auto;
+      position: relative; }
+      body .mapCol .map img {
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0px 0px 30px 6px #86add4; }
+      body .mapCol .map a {
+        background: #007cce;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        position: absolute; }
+        body .mapCol .map a::after {
+          content: "Sheher";
+          position: absolute;
+          background: #0000009c;
+          padding: 10px;
+          opacity: 0;
+          left: 15px;
+          pointer-events: none;
+          top: -13px;
+          transition: all 0.3s;
+          color: white;
+          border-radius: 10px;
+          padding: 5px 15px; }
+        body .mapCol .map a::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          border: 1px solid #00548c;
+          box-shadow: 0px 0px 15px 1px #55e2f9;
+          padding: 6px;
+          top: -2px;
+          left: -2px; }
+        body .mapCol .map a:hover {
+          z-index: 1; }
+          body .mapCol .map a:hover::after {
+            opacity: 1; }
+          body .mapCol .map a:hover::before {
+            animation-name: ring;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out; }
+      body .mapCol .map .baku {
+        top: 245px;
+        right: 135px; }
+        body .mapCol .map .baku::after {
+          content: "Bakı"; }
+      body .mapCol .map .sumgayit {
+        top: 218px;
+        right: 160px; }
+        body .mapCol .map .sumgayit::after {
+          content: "Sumqayıt"; }
+      body .mapCol .map .absheron {
+        top: 250px;
+        right: 200px; }
+        body .mapCol .map .absheron::after {
+          content: "Abşeron"; }
+      body .mapCol .map .xizi {
+        top: 190px;
+        right: 230px; }
+        body .mapCol .map .xizi::after {
+          content: "Xızı"; }
+      body .mapCol .map .siyezen {
+        top: 150px;
+        right: 225px; }
+        body .mapCol .map .siyezen::after {
+          content: "Siyəzən"; }
+      body .mapCol .map .shabran {
+        top: 115px;
+        right: 250px; }
+        body .mapCol .map .shabran::after {
+          content: "Şabran"; }
+      body .mapCol .map .xachmaz {
+        top: 70px;
+        right: 265px; }
+        body .mapCol .map .xachmaz::after {
+          content: "Xaçmaz"; }
+      body .mapCol .map .quba {
+        top: 120px;
+        right: 310px; }
+        body .mapCol .map .quba::after {
+          content: "Quba"; }
+      body .mapCol .map .qusar {
+        top: 90px;
+        right: 330px; }
+        body .mapCol .map .qusar::after {
+          content: "Qusar"; }
+      body .mapCol .map .shamaxi {
+        top: 218px;
+        right: 285px; }
+        body .mapCol .map .shamaxi::after {
+          content: "Şamaxı"; }
+      body .mapCol .map .qobustan {
+        top: 235px;
+        right: 245px; }
+        body .mapCol .map .qobustan::after {
+          content: "Qobustan"; }
+      body .mapCol .map .haciqabul {
+        top: 290px;
+        right: 260px; }
+        body .mapCol .map .haciqabul::after {
+          content: "Hacıqabul"; }
+      body .mapCol .map .shirvan {
+        top: 322px;
+        right: 243px; }
+        body .mapCol .map .shirvan::after {
+          content: "Şirvan"; }
+      body .mapCol .map .salyan {
+        top: 350px;
+        right: 215px; }
+        body .mapCol .map .salyan::after {
+          content: "Salyan"; }
+      body .mapCol .map .neftchala {
+        top: 420px;
+        right: 220px; }
+        body .mapCol .map .neftchala::after {
+          content: "Neftçala"; }
+      body .mapCol .map .masalli {
+        top: 470px;
+        right: 270px; }
+        body .mapCol .map .masalli::after {
+          content: "Masallı"; }
+      body .mapCol .map .lenkeran {
+        top: 505px;
+        right: 265px; }
+        body .mapCol .map .lenkeran::after {
+          content: "Lənkəran"; }
+      body .mapCol .map .astara {
+        top: 550px;
+        right: 270px; }
+        body .mapCol .map .astara::after {
+          content: "Astara"; }
+      body .mapCol .map .lerik {
+        top: 515px;
+        right: 300px; }
+        body .mapCol .map .lerik::after {
+          content: "Lerik"; }
+      body .mapCol .map .yardimli {
+        top: 490px;
+        right: 330px; }
+        body .mapCol .map .yardimli::after {
+          content: "Yardımlı"; }
+      body .mapCol .map .celilabad {
+        top: 440px;
+        right: 300px; }
+        body .mapCol .map .celilabad::after {
+          content: "Cəlilabad"; }
+      body .mapCol .map .bilesuvar {
+        top: 390px;
+        right: 295px; }
+        body .mapCol .map .bilesuvar::after {
+          content: "Biləsuvar"; }
+      body .mapCol .map .saatli {
+        top: 345px;
+        right: 290px; }
+        body .mapCol .map .saatli::after {
+          content: "Saatlı"; }
+      body .mapCol .map .sabirabad {
+        top: 362px;
+        right: 260px; }
+        body .mapCol .map .sabirabad::after {
+          content: "Sabirabad"; }
+      body .mapCol .map .qebele {
+        top: 155px;
+        right: 385px; }
+        body .mapCol .map .qebele::after {
+          content: "Qəbələ"; }
+      body .mapCol .map .ismayilli {
+        top: 175px;
+        right: 340px; }
+        body .mapCol .map .ismayilli::after {
+          content: "İsmayıllı"; }
+      body .mapCol .map .agsu {
+        top: 230px;
+        right: 315px; }
+        body .mapCol .map .agsu::after {
+          content: "Ağsu"; }
+      body .mapCol .map .kurdemir {
+        top: 270px;
+        right: 333px; }
+        body .mapCol .map .kurdemir::after {
+          content: "Kürdəmir"; }
+      body .mapCol .map .imishli {
+        top: 310px;
+        right: 355px; }
+        body .mapCol .map .imishli::after {
+          content: "İmişli"; }
+      body .mapCol .map .beyleqan {
+        top: 335px;
+        right: 396px; }
+        body .mapCol .map .beyleqan::after {
+          content: "Beyləqan"; }
+      body .mapCol .map .zerdab {
+        top: 270px;
+        right: 385px; }
+        body .mapCol .map .zerdab::after {
+          content: "Zərdab"; }
+      body .mapCol .map .ucar {
+        top: 245px;
+        right: 392px; }
+        body .mapCol .map .ucar::after {
+          content: "Ucar"; }
+      body .mapCol .map .goychay {
+        top: 220px;
+        right: 375px; }
+        body .mapCol .map .goychay::after {
+          content: "Göyçay"; }
+      body .mapCol .map .agdash {
+        top: 215px;
+        right: 430px; }
+        body .mapCol .map .agdash::after {
+          content: "Ağdaş"; }
+      body .mapCol .map .oguz {
+        top: 150px;
+        right: 420px; }
+        body .mapCol .map .oguz::after {
+          content: "Oğuz"; }
+      body .mapCol .map .sheki {
+        top: 120px;
+        right: 465px; }
+        body .mapCol .map .sheki::after {
+          content: "Şəki"; }
+      body .mapCol .map .qax {
+        top: 90px;
+        right: 500px; }
+        body .mapCol .map .qax::after {
+          content: "Qax"; }
+      body .mapCol .map .zaqatala {
+        top: 50px;
+        right: 505px; }
+        body .mapCol .map .zaqatala::after {
+          content: "Zaqatala"; }
+      body .mapCol .map .balaken {
+        top: 35px;
+        right: 545px; }
+        body .mapCol .map .balaken::after {
+          content: "Balakən"; }
+      body .mapCol .map .mingechevir {
+        top: 191px;
+        right: 473px; }
+        body .mapCol .map .mingechevir::after {
+          content: "Mingəçevir"; }
+      body .mapCol .map .yevlax {
+        top: 212px;
+        right: 461px; }
+        body .mapCol .map .yevlax::after {
+          content: "Yevlax"; }
+      body .mapCol .map .berde {
+        top: 255px;
+        right: 448px; }
+        body .mapCol .map .berde::after {
+          content: "Bərdə"; }
+      body .mapCol .map .agcabedi {
+        top: 300px;
+        right: 425px; }
+        body .mapCol .map .agcabedi::after {
+          content: "Ağcabədi"; }
+      body .mapCol .map .fuzuli {
+        top: 372px;
+        right: 425px; }
+        body .mapCol .map .fuzuli::after {
+          content: "Füzuli"; }
+      body .mapCol .map .cebrayil {
+        top: 415px;
+        right: 485px; }
+        body .mapCol .map .cebrayil::after {
+          content: "Cəbrayıl"; }
+      body .mapCol .map .zengilan {
+        top: 455px;
+        right: 525px; }
+        body .mapCol .map .zengilan::after {
+          content: "Zəngilan"; }
+      body .mapCol .map .qubadli {
+        top: 410px;
+        right: 525px; }
+        body .mapCol .map .qubadli::after {
+          content: "Qubadlı"; }
+      body .mapCol .map .lachin {
+        top: 355px;
+        right: 555px; }
+        body .mapCol .map .lachin::after {
+          content: "Laçın"; }
+      body .mapCol .map .shusha {
+        top: 360px;
+        right: 515px; }
+        body .mapCol .map .shusha::after {
+          content: "Şuşa"; }
+      body .mapCol .map .xocali {
+        top: 335px;
+        right: 510px; }
+        body .mapCol .map .xocali::after {
+          content: "Xocalı"; }
+      body .mapCol .map .agdam {
+        top: 305px;
+        right: 480px; }
+        body .mapCol .map .agdam::after {
+          content: "Ağdam"; }
+      body .mapCol .map .terter {
+        top: 265px;
+        right: 495px; }
+        body .mapCol .map .terter::after {
+          content: "Tərtər"; }
+      body .mapCol .map .kelbecer {
+        top: 300px;
+        right: 560px; }
+        body .mapCol .map .kelbecer::after {
+          content: "Kəlbəcər"; }
+      body .mapCol .map .naftalan {
+        top: 230px;
+        right: 500px; }
+        body .mapCol .map .naftalan::after {
+          content: "Naftalan"; }
+      body .mapCol .map .goranboy {
+        top: 190px;
+        right: 518px; }
+        body .mapCol .map .goranboy::after {
+          content: "Goranboy"; }
+      body .mapCol .map .samux {
+        top: 180px;
+        right: 550px; }
+        body .mapCol .map .samux::after {
+          content: "Samux"; }
+      body .mapCol .map .gence {
+        top: 202px;
+        right: 560px; }
+        body .mapCol .map .gence::after {
+          content: "Gəncə"; }
+      body .mapCol .map .goygol {
+        top: 235px;
+        right: 560px; }
+        body .mapCol .map .goygol::after {
+          content: "Göygöl"; }
+      body .mapCol .map .dashkesen {
+        top: 235px;
+        right: 597px; }
+        body .mapCol .map .dashkesen::after {
+          content: "Daşkəsən"; }
+      body .mapCol .map .shemkir {
+        top: 180px;
+        right: 597px; }
+        body .mapCol .map .shemkir::after {
+          content: "Şəmkir"; }
+      body .mapCol .map .tovuz {
+        top: 155px;
+        right: 640px; }
+        body .mapCol .map .tovuz::after {
+          content: "Tovuz"; }
+      body .mapCol .map .gedebey {
+        top: 230px;
+        right: 640px; }
+        body .mapCol .map .gedebey::after {
+          content: "Gədəbəy"; }
+      body .mapCol .map .agstafa {
+        top: 105px;
+        right: 660px; }
+        body .mapCol .map .agstafa::after {
+          content: "Ağstafa"; }
+      body .mapCol .map .qazax {
+        top: 130px;
+        right: 685px; }
+        body .mapCol .map .qazax::after {
+          content: "Qazax"; }
+      body .mapCol .map .ordubad {
+        top: 465px;
+        right: 610px; }
+        body .mapCol .map .ordubad::after {
+          content: "Ordubad"; }
+      body .mapCol .map .culfa {
+        top: 455px;
+        right: 640px; }
+        body .mapCol .map .culfa::after {
+          content: "Culfa"; }
+      body .mapCol .map .shahbuz {
+        top: 400px;
+        right: 640px; }
+        body .mapCol .map .shahbuz::after {
+          content: "Şahbuz"; }
+      body .mapCol .map .naxchivan {
+        top: 432px;
+        right: 660px; }
+        body .mapCol .map .naxchivan::after {
+          content: "Naxçıvan"; }
+      body .mapCol .map .babek {
+        top: 415px;
+        right: 680px; }
+        body .mapCol .map .babek::after {
+          content: "Babək"; }
+      body .mapCol .map .sherur {
+        top: 395px;
+        right: 705px; }
+        body .mapCol .map .sherur::after {
+          content: "Şərur"; }
+      body .mapCol .map .sederek {
+        top: 363px;
+        right: 730px; }
+        body .mapCol .map .sederek::after {
+          content: "Sədərək"; }
+      body .mapCol .map .xocavend {
+        top: 350px;
+        right: 470px; }
+        body .mapCol .map .xocavend::after {
+          content: "Xocavənd"; }
+  body .contentCol {
+    height: 92vh;
+    position: relative; }
+    body .contentCol .heading {
+      position: relative;
+      text-align: center; }
+      body .contentCol .heading h5 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: gray;
+        font-family: "Comfortaa", cursive;
+        display: inline-block; }
+      body .contentCol .heading i {
+        font-size: 19px;
+        color: #9E9E9E;
+        margin-left: 15px;
+        cursor: pointer; }
+    body .contentCol .image {
+      height: 40%;
+      text-align: center; }
+      body .contentCol .image img {
+        height: 100%;
+        box-shadow: 0px 0px 30px 6px #bdaa71; }
+    body .contentCol .content p {
+      margin-top: 20px;
+      padding: 0px 15px; }
+  body #edit {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    background: #b3b3b3d4;
+    display: none; }
+  body #edit img {
+    max-width: 100%; }
+  body #edit #profilePhoto {
+    max-width: 100%;
+    margin-top: 25px; }
+  body #edit .btn {
+    background: #007cce;
+    margin-top: 20px;
+    color: white; }
+  body #edit .mainView {
+    background: #3131318c;
+    border-radius: 10px;
+    position: relative;
+    padding: 0; }
+  body #edit .fa-times {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    background-color: #007cce;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+    cursor: pointer; }
+  body #edit .body {
+    padding: 25px; }
+    body #edit .body .form-control {
+      border-radius: 8px;
+      border: none;
+      background: #8bd7e48c;
+      color: #f3f3f3;
+      margin-bottom: 12px; }
+      body #edit .body .form-control::placeholder {
+        color: darkgrey; }
+      body #edit .body .form-control:focus {
+        box-shadow: 0px 0px 8px 5px #8080805e; }
+    body #edit .body .accept {
+      width: 100%;
+      padding: 12px; }
+    body #edit .body .addPhoto {
+      background: #0095f71c;
+      border: 1px solid #007cce;
+      color: white; }
+
+#about h1 {
+  text-align: center;
+  width: 100%;
+  color: #828282; }
+#about .region img {
+  max-width: 100%; }
+#about .about {
+  margin-top: 30px; }
+  #about .about .area, #about .about .height, #about .about .village, #about .about .country, #about .about .people {
+    display: flex;
+    justify-content: space-between; }
+    #about .about .area .text, #about .about .height .text, #about .about .village .text, #about .about .country .text, #about .about .people .text {
+      color: #007cce;
+      font-size: 20px;
+      font-weight: bold; }
+    #about .about .area .value, #about .about .height .value, #about .about .village .value, #about .about .country .value, #about .about .people .value {
+      color: #fd3e3e;
+      font-size: 20px; }
+#about .mainContent p {
+  font-size: 17px; }
+
+#login {
+  background-image: url("../img/map.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Comfortaa", cursive; }
+  #login main .loginPage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #b3b3b3d4; }
+    #login main .loginPage .mainForm {
+      background: #3131318c;
+      padding: 40px 50px;
+      border-radius: 10px;
+      position: relative; }
+      #login main .loginPage .mainForm .form, #login main .loginPage .mainForm .registration {
+        padding: 3px; }
+        #login main .loginPage .mainForm .form input, #login main .loginPage .mainForm .registration input {
+          border-radius: 8px;
+          border: none;
+          background: #8bd7e48c;
+          color: #f3f3f3;
+          margin-bottom: 15x;
+          font-size: 16px;
+          height: 45px;
+          margin-bottom: 20px; }
+          #login main .loginPage .mainForm .form input::placeholder, #login main .loginPage .mainForm .registration input::placeholder {
+            color: #dfdfdf;
+            font-size: 15px; }
+          #login main .loginPage .mainForm .form input:focus, #login main .loginPage .mainForm .registration input:focus {
+            box-shadow: 0 0 10px 8px rgba(13, 13, 14, 0.25); }
+        #login main .loginPage .mainForm .form .btn, #login main .loginPage .mainForm .registration .btn {
+          color: white;
+          background: #0095f7; }
+        #login main .loginPage .mainForm .form .reg, #login main .loginPage .mainForm .registration .reg {
+          margin-top: 20px;
+          color: black;
+          background: #0095f71c;
+          border: 1px solid #0095f7;
+          color: white; }
+        #login main .loginPage .mainForm .form p, #login main .loginPage .mainForm .registration p {
+          font-style: italic;
+          font-weight: bold;
+          font-size: 14px;
+          position: relative;
+          color: white;
+          margin-top: 15px; }
+          #login main .loginPage .mainForm .form p::before, #login main .loginPage .mainForm .registration p::before {
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            background: #0095f7;
+            top: 45%;
+            left: 0; }
+          #login main .loginPage .mainForm .form p::after, #login main .loginPage .mainForm .registration p::after {
+            content: "";
+            position: absolute;
+            width: 35%;
+            height: 1px;
+            background: #0095f7;
+            top: 45%;
+            right: 0; }
+
+/*# sourceMappingURL=style.css.map */

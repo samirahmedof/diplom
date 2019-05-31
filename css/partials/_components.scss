@@ -1,0 +1,97 @@
+.zHeading {
+    position: relative;
+    h1 {
+        color: #44566c;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 42px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 70px;
+            background-color: $pColor;
+            height: 4px;
+            bottom: -10px;
+        }
+    }
+    a {
+        color: #44566c;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 42px;
+        /* Text style for "Hamısını g" */
+        text-decoration: underline;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+}
+.zCard {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    .cardHead {
+        img {
+            width: 100%;
+        }
+    }
+    .cardBody {
+        padding: 28px 30px 58px;
+        .heading {
+            padding-bottom: 10px;
+            a {
+                color: #0e65f3;
+                font-size: 12px;
+                font-weight: 600;
+                margin-right: 25px;
+            }
+            span {
+                color: #878e9e;
+                font-size: 12px;
+                font-weight: 500;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background: #878e9e;
+                    border-radius: 100%;
+                    left: -17px;
+                    top: 5px;
+                }
+            }
+        }
+        .content {
+            p {
+                color: #152942;
+                font-family: Poppins;
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+        }
+    }
+    .cardFooter  {
+        border-radius: 25px 0 0 25px;
+        background-color: #0e65f3;
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+        padding: 13px;
+        width: 55px;
+        height: 45px;
+        text-align: center;
+        i {
+            color: white;
+            font-size: 26px;
+        }
+    }
+}
+
+main {
+    margin-bottom: 100px;
+}

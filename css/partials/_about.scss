@@ -1,0 +1,33 @@
+#about {
+    h1 {
+        text-align: center;
+        width: 100%;
+        color: #828282;
+    }
+    .region {
+        img {
+            max-width: 100%;
+        }
+    }
+    .about {
+        margin-top: 30px;
+        .area , .height , .village , .country , .people {
+            display: flex;
+            justify-content: space-between;
+            .text {
+                color: #007cce;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .value {
+                color: #fd3e3e;
+                font-size: 20px;
+            }
+        }
+    }
+    .mainContent {
+        p {
+            font-size: 17px;
+        }
+    }
+}

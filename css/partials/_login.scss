@@ -1,0 +1,80 @@
+#login {
+    background-image: url("../img/map.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $font;
+    main {
+        .loginPage {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #b3b3b3d4;
+            .mainForm {
+                background: #3131318c;
+                padding: 40px 50px;
+                border-radius: 10px;
+                position: relative;
+                .form , .registration{
+                    padding: 3px;
+                    input {
+                        border-radius: 8px;
+                        border: none;
+                        background: #8bd7e48c;
+                        color: #f3f3f3;
+                        margin-bottom: 15x;
+                        font-size: 16px;
+                        height: 45px;
+                        margin-bottom: 20px;
+                        &::placeholder {
+                            color: rgb(223, 223, 223);
+                            font-size: 15px;
+                        }
+                        &:focus {
+                            box-shadow: 0 0 10px 8px rgba(13, 13, 14, 0.25);
+                        }
+                    }
+                    .btn {
+                        color: white;
+                        background: #0095f7;
+                    }
+                    .reg {
+                        margin-top: 20px;
+                        color: black;
+                        background: #0095f71c;
+                        border: 1px solid #0095f7;
+                        color: white;
+                    }
+                    p {
+                        font-style: italic;
+                        font-weight: bold;
+                        font-size: 14px;
+                        position: relative;
+                        color: white;
+                        margin-top: 15px;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 35%;
+                            height: 1px;
+                            background: #0095f7;
+                            top: 45%;
+                            left: 0;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 35%;
+                            height: 1px;
+                            background: #0095f7;
+                            top: 45%;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
